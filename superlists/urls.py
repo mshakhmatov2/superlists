@@ -21,5 +21,6 @@ from lists import views
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path(r'', views.home_page, name='home'),
+    path(r'lists/new', views.new_list, name='new_list'),
     path(r'lists/only-one-list/', views.view_list, name='view_list'),
 ]
