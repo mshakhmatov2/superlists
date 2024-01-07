@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-m2b#**66e-_ik+_9is9jgj((+#^h7qc27i4)ue=f*7#dg@pk-^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['superlists-staging.compilata.com']
 
 
 # Application definition
@@ -124,3 +124,5 @@ STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, '../static'))
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_TRUSTED_ORIGINS = ['http://superlists-staging.compilata.com']
