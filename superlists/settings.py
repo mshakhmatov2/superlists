@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-m2b#**66e-_ik+_9is9jgj((+#^h7qc27i4)ue=f*7#dg@pk-^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['superlists-staging.compilata.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
